@@ -1,0 +1,40 @@
+package com.bearcreekapps.taskit;
+
+import java.io.Serializable;
+import java.util.Date;
+
+/**
+ * Created by Rob on 2/6/2015.
+ */
+public class Task implements Serializable{
+
+    String mName;
+    Date mDueDate;
+    boolean mDone;
+
+    public String getName() {
+        return mName;
+    }
+
+    public void setName(String name) {
+        mName = name;
+    }
+
+    public Date getDueDate() {
+        return mDueDate;
+    }
+
+    public void setDueDate(Date dueDate) {
+        mDueDate = dueDate;
+    }
+
+    public boolean isDone() {
+        return mDone;
+    }
+
+    public void setDone(boolean done) {
+        mDone = done;
+    }
+
+    public String toString() {return mName;}
+}
